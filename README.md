@@ -1,3 +1,4 @@
+
 # IRONHACK 
 ## Data Analysis Bootcamp - Project II - Data Visualization  
   
@@ -10,7 +11,7 @@
   * [Challenge 3](#pushpin-challenge-2)  
   * [Challenge 2](#pushpin-challenge-3)      
   * [Built With](#hammer-built-with)  
-* [How to use the pipeline](#how-to-use-the-pipeline)  
+* [Project Structure](#project-structure)  
   * [Prerequisites](#page_with_curl-prerequisites)  
   * [Inputs](#computer-inputs)  
   * [Folder Structure](#file_folder-folder-structure)  
@@ -25,94 +26,97 @@
   
 The aim of this repository is to show the adquire skills throught Module 1 of Data Analytics in IronHack's Bootcamp [PT2020]  
 
-  
-###  :pushpin: Challenge 1  
-  
 
   
-###  :pushpin: Challenge 2  
-  
+###  :pushpin:  **Challenge 1: Exploratory Data Visualization Charts and Summary Statistics**
 
+The goal of this challenge is to build an **exploratory data analysis report** in order to gain initial insight on our diamonds dataset. Your notebook must include:
+
+-   Summary statistics including descriptive statistics (max, min, mean, standard deviation, percentiles, correlations, etc.) and data types (integer, float, boolean, string, etc.).
+-   Data visualizations charts in order to capture a large amount of data all at once in a clear and concise manner (Box Plots, Histograms, Bar Plots, Scatter Plots, Correlation Matrix, etc.).
   
+###  :pushpin: Challenge 2  Tableau Data Dashboard
   
-###  :pushpin: Challenge 3  
+Dashboards are powerful tools for communicating important information **at-a-glance**. The goal of this challenge is to build a data dashboard using our diamonds dataset that will help the final user
+  
+ Instead, a data dashboard should be **a single interactive interface built around a specific objetive and which components are logically arranged in order to provide data relevant insights effectively**.
   
 
   ###  :hammer: Built With   
-The core of the project is Python 3.7.3, but you have to install those libraries for run the script.   
-Native packages:  
-- [Argparse](https://docs.python.org/3.7/library/argparse.html)  
-- [Configparser](https://docs.python.org/3/library/configparser.html)  
-- [Datetime](https://docs.python.org/2/library/datetime.html)  
-- [Re](https://docs.python.org/3/library/re.html)  
-- [Smtplib](https://docs.python.org/3/library/smtplib.html)  
-- [Email](https://docs.python.org/3/library/email.examples.html)  
-  
-Furthermore, it is has to be installed the following libraries:  
-- [SQL Alchemy (v.1.3.17)](https://docs.sqlalchemy.org/en/13/intro.html)  
+The core of the project is Python 3.7.3, but you have to install those libraries for run the analysis.   
 - [Pandas (v.0.24.2)](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)  
 - [Numpy (v.1.18.1)](https://numpy.org/doc/stable/)  
-- [Requests (v.2.23.0)](https://requests.readthedocs.io/)  
-- [Beautiful Soup (v.4.9.1)](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
-- [Pysftp (0.2.9) ](https://pypi.org/project/pysftp/)  
+- [Matplotlib(v.3.2.1)](https://matplotlib.org/)  
+- [Seaborn(v.0.10.1)](https://seaborn.pydata.org/)  
+- [Plotly(v.4.8.2)](https://plotly.com/)  
 
   
-## **How to use the pipeline**
+## **Project Structure**
 ###  **:page_with_curl:Prerequisites**  
-Please, install all the libraries mentinoned in [Built With](#built-with) in your enviroment in order to run the script.  
+The following structure has been followed to analyzed all the dataset. 
+
+```
+## Index
+- **Libraries used**
+- **Dataset Exploration**
+    - Shape
+    - Data types and null values
+- **Basic Statistics of diamons' dataframe**
+- **Diamons' dataframe operations**
+    - Missing Data
+    - Weird data
+    - Duplicated data
+- **Analysis by type of data**
+    - Quantitative data
+        - Cut
+        - Color 
+        - Clarity
+    - Qualitative data
+        - Carat
+        - Price
+        - Table
+        - Depth
+        - Size (x,y,z)
+- **How previous columns are performing together**    
+    - Correlation
+    - Contingency table
+    - Cramer's V
+    - Custom Rapaport table
+- **Conclusions**
+- **Export data filtered**
+
+```
+
+If you want to see online, you could view the entire analysis throught this link. [Project Analysis](https://marodenas.es/ironhackm2/)
    
 
 
   
-### **:computer: Inputs**  
-
-It is mandatory to connect those sources with the pipeline in order to get the expected results. 
-
-- [Data base](/data/raw/raw_data_project_m1.db ) SQLAlchemy.  
-- Data base procesed with Pandas  
-- Job titles  [API](http://dataatwork.org/data/) with request.  
-- Country codes [EuroStat](https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Country_codes) with request and beautifulsoup  
   
   
   
 ### :file_folder: **Folder structure**  
 ```
-└── ih_datamadpt0420_project_m1  
+└── ih_datamadpt0420_project_m2  
     ├── __trash__  
-  ├── .gitignore  
-    ├── .env  
-    ├── requeriments.txt  
+    ├── .gitignore  
     ├── README.md  
-    ├── main_script.py  
-    ├── config.ini  
     ├── notebooks  
-    │   ├── notebook1.ipynb  
-    │   └── notebook2.ipynb  
-    ├── p_acquisition  
-    │   ├── __init__.py  
-    │   └── m_acquisition.py  
-    ├── p_analysis  
-    │   ├── __init__.py  
-    │   └── m_analysis.py  
-    ├── p_reporting  
-    │   ├── __init__.py  
-    │   └── m_reporting.py  
-    ├── p_wrangling  
-    │   ├── __init__.py  
-    │   └── m_wrangling.py  
+    │   ├── data_analysis_report.ipynb  
+    ├── data_analysis_html  
+    │   ├── data_analysis_report.py  
     └── data  
-        ├── html  
         ├── raw  
         └── results  
 ```  
   
 
-## **Processing stages**  
+## **Tableau Report**  
   
-### **:electric_plug: Acquisition**  
+  If you want to see the final dashboard, click on this link to see it. 
+[  Tableau Dashboard](https://public.tableau.com/profile/miguel.ngel.r.denas#!/vizhome/DiamondsDatasetExploration-Ironhack-Module2/Diamonsdataset)
   
 
  ---  
 ### ** Next stages**  
-- Multiprocessing connection. 
-- Object Oriented Programing data pipeline.
+
