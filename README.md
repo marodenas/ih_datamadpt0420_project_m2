@@ -8,18 +8,11 @@
 
 * [About the Project](#about-the-project)  
   * [Challenge 1](#pushpin-challenge-1)  
-  * [Challenge 3](#pushpin-challenge-2)  
-  * [Challenge 2](#pushpin-challenge-3)      
+  * [Challenge 2](#pushpin-challenge-2)  
   * [Built With](#hammer-built-with)  
 * [Project Structure](#project-structure)  
-  * [Prerequisites](#page_with_curl-prerequisites)  
-  * [Inputs](#computer-inputs)  
-  * [Folder Structure](#file_folder-folder-structure)  
- * [Procesing Stages](#procesing-stages)
-	  * [Acquistion](#electric_plug-acquisition)  
-	  * [Wrangling](#wrench-wrangling)  
-	  * [Analysis](#rocket-analysis)  
-	  * [Reporting](#mailbox-reporting)  
+  * [Dataset Analysis](#page_with_curl-dataset-analysis)  
+  * [Tableau Report](#tableau-report)  
 * [Next Stages](#next-stages) 
   
 ## About the project  
@@ -52,7 +45,7 @@ The core of the project is Python 3.7.3, but you have to install those libraries
 
   
 ## **Project Structure**
-###  **:page_with_curl:Prerequisites**  
+###  **:page_with_curl:Dataset Analysis**  
 The following structure has been followed to analyzed all the dataset. 
 
 ```
@@ -111,7 +104,7 @@ If you want to see online, you could view the entire analysis throught this link
 ```  
   
 
-## **Tableau Report**  
+### **Tableau Report**  
   
   If you want to see the final dashboard, click on this link to see it. 
 [  Tableau Dashboard](https://public.tableau.com/profile/miguel.ngel.r.denas#!/vizhome/DiamondsDatasetExploration-Ironhack-Module2/Diamonsdataset)
